@@ -1,0 +1,9 @@
+Start QEMU with /usr/bin/qemu-system-x86_64 -name CiscoCSR1000v16.12.8-2 -m 3072M -smp cpus=1,sockets=1 -enable-kvm -machine smm=off -boot order=c -drive file=/opt/gns3/projects/bb5537ec-165f-4699-9a53-aed933480193/project-files/qemu/60f08064-b823-4055-a0a0-c86dcdd3ba15/hda_disk.qcow2,if=ide,index=0,media=disk,id=drive0 -uuid 60f08064-b823-4055-a0a0-c86dcdd3ba15 -vnc 0.0.0.0:1 -monitor tcp:127.0.0.1:41381,server,nowait -net none -device vmxnet3,mac=0c:f0:80:64:00:00,netdev=gns3-0 -netdev socket,id=gns3-0,udp=127.0.0.1:20023,localaddr=127.0.0.1:20022 -device vmxnet3,mac=0c:f0:80:64:00:01,netdev=gns3-1 -netdev socket,id=gns3-1,udp=127.0.0.1:20025,localaddr=127.0.0.1:20024 -device vmxnet3,mac=0c:f0:80:64:00:02,netdev=gns3-2 -netdev socket,id=gns3-2,udp=127.0.0.1:20027,localaddr=127.0.0.1:20026 -device vmxnet3,mac=0c:f0:80:64:00:03,netdev=gns3-3 -netdev socket,id=gns3-3,udp=127.0.0.1:20029,localaddr=127.0.0.1:20028
+
+Execution log:
+qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.80000001H:ECX.svm [bit 2]
+[vmxnet3][WR][vmxnet3_get_command_status]: Received request for unknown command: cafe000f
+[vmxnet3][WR][vmxnet3_get_command_status]: Received request for unknown command: cafe000f
+[vmxnet3][WR][vmxnet3_get_command_status]: Received request for unknown command: cafe000f
+[vmxnet3][WR][vmxnet3_get_command_status]: Received request for unknown command: cafe000f
+qemu-system-x86_64: terminating on signal 15 from pid 937 (/usr/bin/python3)

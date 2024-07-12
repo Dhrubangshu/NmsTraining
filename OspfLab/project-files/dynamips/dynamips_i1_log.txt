@@ -1,0 +1,26 @@
+Jul 08 03:56:08.691 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jul 08 03:56:08.691 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 47793.
+Jul 08 03:56:08.694 HYPERVISOR: exec_cmd: hypervisor version 
+Jul 08 03:56:08.695 HYPERVISOR: exec_cmd: hypervisor working_dir /opt/gns3/projects/1b7ff053-1ffd-4b40-9767-06afb5d2d29a/project-files/dynamips 
+Jul 08 03:56:08.695 GENERAL: working_dir=/opt/gns3/projects/1b7ff053-1ffd-4b40-9767-06afb5d2d29a/project-files/dynamips
+Jul 08 03:56:08.696 HYPERVISOR: exec_cmd: hypervisor working_dir /opt/gns3/projects/1b7ff053-1ffd-4b40-9767-06afb5d2d29a/project-files/dynamips/2f4b652e-6181-4aa6-b2be-70cb0b211b62 
+Jul 08 03:56:08.696 GENERAL: working_dir=/opt/gns3/projects/1b7ff053-1ffd-4b40-9767-06afb5d2d29a/project-files/dynamips/2f4b652e-6181-4aa6-b2be-70cb0b211b62
+Jul 08 03:56:08.696 HYPERVISOR: exec_cmd: vm create R1 1 c3725 
+Jul 08 03:56:08.696 VM: VM R1 created.
+Jul 08 03:56:08.697 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+Jul 08 03:56:08.698 HYPERVISOR: exec_cmd: c3725 get_mac_addr R1 
+Jul 08 03:56:08.698 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jul 08 03:56:08.701 HYPERVISOR: exec_cmd: vm set_ios R1 /opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Jul 08 03:56:08.702 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 08 03:56:08.702 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60c09aa0 
+Jul 08 03:56:08.703 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jul 08 03:56:08.875 HYPERVISOR: exec_cmd: vm set_ios R1 /opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Jul 08 03:56:10.343 HYPERVISOR: exec_cmd: vm set_ios R1 /opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Jul 08 03:57:24.971 HYPERVISOR: exec_cmd: vm set_ios R1 /opt/gns3/images/IOS/c3725-adventerprisek9-mz.124-15.T14.image 
+Jul 08 04:00:12.850 HYPERVISOR: exec_cmd: vm get_status R1 
+Jul 08 04:00:12.851 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jul 08 04:00:12.851 HYPERVISOR: exec_cmd: vm delete R1 
+Jul 08 04:00:12.852 VM: VM R1 destroyed.
+Jul 08 04:00:12.853 HYPERVISOR: exec_cmd: hypervisor stop 
+Jul 08 04:00:12.982 HYPERVISOR: Stopped.
+Jul 08 04:00:12.982 GENERAL: reset done.
